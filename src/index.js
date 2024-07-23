@@ -2,6 +2,7 @@ import readlineSync from 'readline-sync';
 import cli from './cli.js';
 import brainEven from './games/brain-even.js';
 import brainCalc from './games/brain-calc.js';
+import brainGcd from './games/brain-gcd.js';
 
 const number = 3;
 
@@ -11,6 +12,8 @@ const getGame = (name) => {
       return brainEven();
     case 'calc':
       return brainCalc();
+    case 'gcd':
+      return brainGcd();
     default:
       return null;
   }
