@@ -1,8 +1,8 @@
 const randomStart = () => Math.floor(Math.random() * 100);
 
-const randomStep = () => Math.floor(Math.random() * 10) + 1;
+const randomStep = () => (Math.floor(Math.random() * 10)) + 1;
 
-const randomLength = () => Math.floor(Math.random() * 1000) % 6 + 5;
+const randomLength = () => (Math.floor(Math.random() * 1000) % 6) + 5;
 
 const randomIndex = (max) => Math.floor(Math.random() * 1000) % max;
 
@@ -23,7 +23,7 @@ const generateQuestion = () => {
   }
   const question = {
     text: progression.join(' '),
-    correctAnswer: correctAnswer,
+    correctAnswer,
   };
   return question;
 };
